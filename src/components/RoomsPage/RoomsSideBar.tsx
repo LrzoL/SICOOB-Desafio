@@ -7,7 +7,10 @@ export default function RoomsSideBar() {
 		<div className="space-y-2">
 			<h2 className="text-center text-sm font-semibold tracking-widest uppercase text-white">Your rooms</h2>
 			<div className="flex flex-col space-y-1 text-gray-200">
-				<Room title="Sala de aula do professor tal" />
+				<Room 
+				title="Sala de aula do professor tal" 
+				url=""
+				/>
 			</div>
 		</div>
 	</nav>
