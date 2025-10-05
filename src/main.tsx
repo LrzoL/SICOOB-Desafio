@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import DashboardPage from './pages/DashboardPage.tsx'
-import NavBar from './components/NavBar.tsx'
-import Footer from './components/Footer.tsx'
+import NavBar from './components/Header/NavBar.tsx'
+import Footer from './components/Footer/Footer.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import LoginPage from './pages/LoginPage.tsx'
-import SalasPage from './pages/SalasPage.tsx'
-import CursosPage from './pages/CursosPage.tsx'
-import AiButton from './components/AiButton.tsx'
+import AiButton from './components/AI/AiButton.tsx'
+import YourRoomsPage from './pages/YourRoomsPage.tsx'
+import YourCoursesPage from './pages/YourCoursesPage.tsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -16,11 +16,11 @@ const router = createBrowserRouter([{
   path: '/login',
   element: <LoginPage />,
 }, {
-  path: '/salas',
-  element: <SalasPage />,
+  path: '/yourrooms',
+  element: <YourRoomsPage />,
 }, {
-  path: '/cursos',
-  element: <CursosPage />,
+  path: '/yourcourses',
+  element: <YourCoursesPage />,
 }]);
 
 createRoot(document.getElementById('root')!).render(
