@@ -8,6 +8,8 @@ import LoginPage from './pages/LoginPage.tsx'
 import AiButton from './components/AI/AiButton.tsx'
 import YourRoomsPage from './pages/YourRoomsPage.tsx'
 import YourCoursesPage from './pages/YourCoursesPage.tsx'
+import RegisterPage from './pages/RegisterPage.tsx'
+import { AppProvider } from './AppContext.tsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -21,15 +23,23 @@ const router = createBrowserRouter([{
 }, {
   path: '/yourcourses',
   element: <YourCoursesPage />,
-}]);
+},
+{
+  path: '/register',
+  element: <RegisterPage />,
+}
+]);
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <AppProvider>
     <NavBar />
     <main>
           <RouterProvider router={router} />
           <AiButton />
     </main>
     <Footer />
+     </AppProvider>
   </StrictMode>,
 )

@@ -16,7 +16,7 @@ export default function NavBar() {
 			</li>
 		</ul>
 		<a rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2">
-			<img src="https://www.sicoobengecred.coop.br/wp-content/uploads/2021/04/logomarca.png" alt="" className="w-auto h-8 sm:h-10" />
+			<img src="/nexus.png" className="w-30 h-auto" />
 		</a>
 		<div className="flex items-center md:space-x-4">
 			<div className="relative">
